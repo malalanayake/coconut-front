@@ -7,7 +7,7 @@ import {AUTH_PROVIDERS} from "angular2-jwt";
 import {fakeBackendProvider} from "./_helpers/index";
 import {MockBackend} from "@angular/http/testing";
 import {AppComponent} from "./app.component";
-import {routing, routedComponents} from "./app.routing";
+import {routing} from "./app.routing";
 import {AlertComponent} from "./common/alert/index";
 import {AuthenticationService, UserService} from "./_services/index";
 import {AuthGuard, AlertService} from "./common/services/index";
@@ -50,4 +50,5 @@ import {NavbarModule} from "./common/navbar/index";
     bootstrap: [AppComponent]
 })
 
-export class AppModule {}
+export class AppModule {
+}
