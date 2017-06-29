@@ -2,4 +2,4 @@
 
 import { AppModule } from './app.module';
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(AppModule).catch((error) => console.log("An error occured in bootsrap :", error));;

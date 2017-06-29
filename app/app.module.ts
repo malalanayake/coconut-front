@@ -8,14 +8,16 @@ import {fakeBackendProvider} from "./_helpers/index";
 import {MockBackend} from "@angular/http/testing";
 import {AppComponent} from "./app.component";
 import {routing, routedComponents} from "./app.routing";
-import {AlertComponent} from "./_directives/index";
-import {AuthGuard} from "./_guards/index";
-import {AlertService, AuthenticationService, UserService} from "./_services/index";
+import {AlertComponent} from "./common/alert/index";
+import {AuthGuard} from "./common/services/index";
+import {AuthenticationService, UserService} from "./_services/index";
+import {AlertService} from "./common/services/index";
 import {HomeComponent} from "./home/index";
 import {LoginComponent} from "./login/index";
 import {RegisterComponent} from "./register/index";
 import {Auth0Component} from "./auth0_login/auth0_login.component";
 import {Auth0Service} from "./_services/auth0.service";
+import {NavbarModule} from "./common/navbar/index";
 
 
 @NgModule({
@@ -23,6 +25,7 @@ import {Auth0Service} from "./_services/auth0.service";
         BrowserModule,
         FormsModule,
         HttpModule,
+        NavbarModule,
         routing
     ],
     declarations: [
