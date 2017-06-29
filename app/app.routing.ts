@@ -3,7 +3,7 @@ import {HomeComponent} from "./home/index";
 import {LoginComponent} from "./login/index";
 import {RegisterComponent} from "./register/index";
 import {AuthGuard} from "./common/services/index";
-import {Auth0Component} from "./auth0_login/index";
+import {Auth0Component} from "./common/auth0_login/index";
 
 
 const appRoutes: Routes = [

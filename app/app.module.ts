@@ -9,14 +9,12 @@ import {MockBackend} from "@angular/http/testing";
 import {AppComponent} from "./app.component";
 import {routing, routedComponents} from "./app.routing";
 import {AlertComponent} from "./common/alert/index";
-import {AuthGuard} from "./common/services/index";
 import {AuthenticationService, UserService} from "./_services/index";
-import {AlertService} from "./common/services/index";
+import {AuthGuard, AlertService} from "./common/services/index";
 import {HomeComponent} from "./home/index";
 import {LoginComponent} from "./login/index";
 import {RegisterComponent} from "./register/index";
-import {Auth0Component} from "./auth0_login/auth0_login.component";
-import {Auth0Service} from "./_services/auth0.service";
+import {Auth0Component, Auth0Service} from "./common/auth0_login/index";
 import {NavbarModule} from "./common/navbar/index";
 
 
