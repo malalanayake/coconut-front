@@ -6,7 +6,7 @@ import {AuthGuard} from "./common/services/index";
 import {Auth0Component} from "./common/auth0_login/index";
 
 
-const appRoutes: Routes = [
+const APP_ROUTES: Routes = [
     {
         path: '',
         component: HomeComponent,
@@ -32,4 +32,4 @@ const appRoutes: Routes = [
     }
 ];
 
-export const routing = RouterModule.forRoot(appRoutes);
+export const routing = RouterModule.forRoot(APP_ROUTES);

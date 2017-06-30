@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ROUTES } from './navbar-routes.config';
-import { MenuType } from './navbar.metadata';
+import { ROUTES } from './navbar.config';
+import { MenuType } from './navbar.common';
 
 @Component({
     moduleId: module.id,

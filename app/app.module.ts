@@ -7,7 +7,7 @@ import {AUTH_PROVIDERS} from "angular2-jwt";
 import {fakeBackendProvider} from "./_helpers/index";
 import {MockBackend} from "@angular/http/testing";
 import {AppComponent} from "./app.component";
-import {routing} from "./app.routing";
+import {routing} from "./app.routes";
 import {AlertComponent} from "./common/alert/index";
 import {AuthenticationService, UserService} from "./_services/index";
 import {AuthGuard, AlertService} from "./common/services/index";
@@ -16,6 +16,7 @@ import {LoginComponent} from "./login/index";
 import {RegisterComponent} from "./register/index";
 import {Auth0Component, Auth0Service} from "./common/auth0_login/index";
 import {NavbarModule} from "./common/navbar/index";
+import {RouterModule} from "@angular/router";
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {NavbarModule} from "./common/navbar/index";
         FormsModule,
         HttpModule,
         NavbarModule,
-        routing
+        routing,
+        RouterModule.forRoot([])
     ],
     declarations: [
         AppComponent,
